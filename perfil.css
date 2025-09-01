@@ -26,7 +26,7 @@ main {
     gap: 1.5rem;
 }
 
-/* Tarjetas */
+
 .card {
     background-color: #2A335A;
     padding: 1.5rem;
@@ -39,14 +39,14 @@ main {
     color: #ffffff;
 }
 
-/* Saldo destacado */
+
 .saldo .monto {
     font-size: 2rem;
     font-weight: bold;
     color: #4CAF50;
 }
 
-/* Tabla transacciones */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -64,7 +64,7 @@ table th {
     color: #fff;
 }
 
-/* Botón ruleta */
+
 .ruleta button {
     background-color: #E63946;
     border: none;
