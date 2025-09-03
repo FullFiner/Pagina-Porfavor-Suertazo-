@@ -1,10 +1,35 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
+/*-----------------Configuraciones generales, osea iguales en todas las paginas-------------------------------------------*/
+.btn-redireccion{
+    
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0984e3;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+  
+}
+
+.btn-redireccion:hover{
+    background-color: #0652DD;
+    color:lightgrey;
+}
+
+
 
 html,body{
     height: 100%;
@@ -13,38 +38,23 @@ html,body{
     flex-direction: column;
 }
 
-header {
-    background-color: #394761;
+.common-header{
+    background-color: #0b0f2c;
     display: flex;
     align-items: center;
     gap: 3%;
     padding: 1rem 2rem;
+    color:#BCBEC9;
 }
 
-main {
-    background-color: #1C2248;
-    padding: 2%;
-    display: flex;             
-    flex-direction: column;     
-    align-items: center;
-    text-align: center;
-    gap: 1rem; 
-    height: 100%;
-    
-}
-
-
-footer {
-    background-color: #173044;
+.common-footer{
+    background-color: #0b0f2c;
     padding: 1rem;
     text-align: center;
-
-    
 }
 
-
 .titulos {
-    color: #BCBEC9;
+    color: white;
 }
 
 h1 {
@@ -55,24 +65,138 @@ h2 {
     font-size: 1.8rem;
 }
 
+/*-----------------------------------------*/
 
-button {
-    background-color: #020B1C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+#main-inicio {
+    background-image: url("BackgroundGODETO.png");
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    padding: 2%;
+    display: flex;             
+    flex-direction: column;     
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem; 
+    height: 100%;
+    
 }
 
-button:hover {
-    background-color: #7486d8;
+#llamativo{
+    background-color: rgba(6, 82, 221, 0.8);
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+/*-------------------------developersinfor----------------------------------------*/
+#main-devinformation{
+    background-color: #1C2248;
+    padding: 2%;
+    display: flex;             
+    flex-direction: column;     
+    align-items: center;
+    text-align: center;
+    gap: 1rem; 
+    height: 100%;
+    
+}
+.card {
+    background-color: #2A335A;
+    padding: 1.5rem;
+    border-radius: 12px;
+    
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #BCBEC9;
+}
+
+.card p{
+    color:white;
+}
+
+/*-------------------------------------------------------userpro-------------------------------------------------*/
+
+#main-userprofile {
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5rem;
+    padding: 2%;
+    background-color:#1C2248 ;
+    height: 100%;
 }
 
 
+.perfil-saldo {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+}
 
-/*userprofile*/
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.perfil-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #BCBEC9;
+    object-fit: cover;
+}
+
+.perfil-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.perfil-info li {
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
 
 
+.saldo {
+    text-align: center;
+}
+
+.saldo .monto {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+.transacciones table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.transacciones th, 
+.transacciones td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.transacciones th {
+    background-color: #394761;
+    color: #fff;
+}
+
+.transacciones td {
+    background-color: #2A335A;
+    color: #fff;
+}
+/*--------------------------------------------------*/
+#main-roulette{
+    background-color: gray;
+    height: 100%;
+}
