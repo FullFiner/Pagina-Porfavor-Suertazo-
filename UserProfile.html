@@ -3,31 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Perfil de Usuario</title>
-    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
+    <header class="common-header">
         <h1 class="titulo">Perfil de Usuario</h1>
     </header>
 
-    <main>
-        
-        <section class="card">
-            <h2>Información Personal</h2>
-            <p><strong>Nombre:</strong> Juan Pérez</p>
-            <p><strong>Email:</strong> juanperez@mail.com</p>
-            <p><strong>Usuario:</strong> juan123</p>
-        </section>
+    <main id="main-userprofile">
 
         
-        <section class="card saldo">
-            <h2>Saldo Actual</h2>
-            <p class="monto">5000 fichas</p>
+        <section class="perfil-saldo">
+            
+            <section class="card perfil">
+                <header class="perfil-header">
+                    <img src="https://via.placeholder.com/100" alt="Foto de perfil" class="perfil-img">
+                    <div class="perfil-info">
+                        <h2>Juan Pérez</h2>
+                        <ul>
+                            <li><strong>Usuario:</strong> juan123</li>
+                            <li><strong>Email:</strong> juanperez@mail.com</li>
+                        </ul>
+                    </div>
+                </header>
+            </section>
+
+            
+            <section class="card saldo">
+                <header>
+                    <h2>Saldo Actual</h2>
+                </header>
+                <p class="monto">5000 fichas</p>
+            </section>
+
         </section>
 
-        
-        <section class="card">
-            <h2>Últimas 5 Transacciones</h2>
+    
+        <section class="card transacciones">
+            <header>
+                <h2>Últimas 5 Transacciones</h2>
+            </header>
             <table>
                 <thead>
                     <tr>
@@ -38,43 +53,45 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>--/--/----</td>
+                        <td>---</td>
+                        <td>---</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>--/--/----</td>
+                        <td>---</td>
+                        <td>---</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>--/--/----</td>
+                        <td>---</td>
+                        <td>---</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>--/--/----</td>
+                        <td>---</td>
+                        <td>---</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>--/--/----</td>
+                        <td>---</td>
+                        <td>---</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        
         <section class="card ruleta">
-            <h2>Acceso a la Ruleta</h2>
-            <button onclick="window.location.href='ruleta.html'">Ir a la Mesa</button>
+            <header>
+                <h2>Acceso a la Ruleta</h2>
+            </header>
+            <a class="btn-redireccion" href="roulette.html">Ir a la ruleta</a>
         </section>
+
     </main>
 
-    <footer>
-        <p>Sitio ficticio de apuestas © 2025</p>
+    <footer class="common-footer">
+        <p class="titulos">© Sitio ficticio de apuestas 2025</p>
     </footer>
 </body>
 </html>
