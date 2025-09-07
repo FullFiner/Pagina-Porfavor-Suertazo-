@@ -13,8 +13,8 @@
     
     display: inline-block;
     padding: 12px 24px;
-    background-color: #0984e3;
-    color: #ffffff;
+    background-color: #1a2a6c;
+    color: white;
     border-radius: 6px;
     font-size: 16px;
     font-family: Arial, sans-serif;
@@ -25,8 +25,8 @@
 }
 
 .btn-redireccion:hover{
-    background-color: #0652DD;
-    color:lightgrey;
+    background-color: #2a4dad;
+    color:white;
 }
 
 
@@ -40,15 +40,18 @@ html,body{
 
 .common-header{
     background-color: #0b0f2c;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     gap: 3%;
     padding: 1rem 2rem;
-    color:#BCBEC9;
+    color:white;
+    
 }
 
 .common-footer{
     background-color: #0b0f2c;
+    color: white;
     padding: 1rem;
     text-align: center;
 }
@@ -65,10 +68,10 @@ h2 {
     font-size: 1.8rem;
 }
 
-/*-----------------------------------------*/
+/*------------------------BeginninPage---------------------------------*/
 
 #main-inicio {
-    background-image: url("BackgroundGODETO.png");
+    background-image: url("Diseño\ sin\ título\ \(1\).png");
     background-size: cover;       
     background-repeat: no-repeat; 
     background-position: center center; 
@@ -83,15 +86,41 @@ h2 {
     
 }
 
-#llamativo{
-    background-color: rgba(6, 82, 221, 0.8);
-    padding: 1rem;
-    border-radius: 30px;
+.card-main-inicio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.5);
+    padding: 8mm;
+    gap: 2mm;
+    border-radius: 1rem;
+    text-align: center;
+    align-items: center;
+    
 }
+
+#btn-register-inicio{
+    width: 35%;
+    background-color: #0984e3;
+}
+
+#btn-register-inicio:hover{
+    background-color: #0652DD;
+}
+
+
+
+
+
+
+
 
 /*-------------------------developersinfor----------------------------------------*/
 #main-devinformation{
-    background-color: #1C2248;
+    background-image: url("Diseño\ sin\ título\ \(1\).png");
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
     padding: 2%;
     display: flex;             
     flex-direction: column;     
@@ -101,25 +130,48 @@ h2 {
     height: 100%;
     
 }
-.card {
+.card-info{
     background-color: #2A335A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
     padding: 1.5rem;
     border-radius: 12px;
+    width: 100%;
+
     
 }
 
-.card h2 {
+.card-info h2 {
     margin-top: 0;
-    color: #BCBEC9;
-}
-
-.card p{
     color:white;
 }
 
+.card-info p{
+    color:white;
+}
+
+.card-info ul{
+    color:white;
+}
+
+.linea-decorativa{
+    width: 100%;
+    height: 1mm;
+    margin-top: 1mm;
+    background-color: #FFD700;
+
+}
 /*-------------------------------------------------------userpro-------------------------------------------------*/
 
 #main-userprofile {
+    background-image: url(perfil.png);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+
     display: flex;
     flex-direction: column; 
     gap: 1.5rem;
@@ -132,9 +184,24 @@ h2 {
 .perfil-saldo {
     display: flex;
     gap: 1.5rem;
-    flex-wrap: wrap; 
+    
+     
 }
 
+.card-perfil{
+    background-color: #2A335A;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    color:white;
+}
+.card-saldo{
+    background-color: #2A335A;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+
+}
 
 .perfil-header {
     display: flex;
@@ -162,41 +229,364 @@ h2 {
 }
 
 
-.saldo {
+.card-saldo {
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color:white;
 }
 
-.saldo .monto {
+.card-saldo .monto {
     font-size: 2rem;
     font-weight: bold;
     color: #4CAF50;
 }
 
+.card-transacciones{
+    background-color: #2A335A;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    color:white;
+}
+.card-ruleta{
+    background-color: #2A335A;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    color:white;
+}
 
-.transacciones table {
+.card-transacciones table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
 }
 
-.transacciones th, 
-.transacciones td {
+.card-transacciones th, 
+.card-transacciones td {
     padding: 0.5rem;
     text-align: center;
     border: 1px solid #444;
 }
 
-.transacciones th {
+.card-transacciones th {
     background-color: #394761;
     color: #fff;
 }
 
-.transacciones td {
+.card-transacciones td {
     background-color: #2A335A;
     color: #fff;
 }
-/*--------------------------------------------------*/
-#main-roulette{
-    background-color: gray;
+/*-----------------------Roulette---------------------------*/
+
+
+#main-roulette {
+    background-image: url(sala1.png);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.gamestatus-sec {
+    text-align: center;
+    background: #1a1a40;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.roulette-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.roulette-sec img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+
+.saldo {
+    text-align: center;
+    font-size: 1.3rem;
+    background: #1a1a40;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+
+.resultados-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.ultimos-numeros {
+    flex: 1;
+    background: #1a1a40;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.ultimos-numeros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ultimos-numeros li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+
+.ultimas-apuestas {
+    flex: 2;
+    background: #1a1a40;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.ultimas-apuestas table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+.ultimas-apuestas th,
+.ultimas-apuestas td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.ultimas-apuestas th {
+    background: #0f0f33;
+    font-weight: bold;
+}
+
+.ultimas-apuestas tr:nth-child(even) {
+    background: #111133;
+}
+
+/*-------------------------------Register---------------------------------*/
+.main-register{
+    background-image: url(opcion3.png);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
+    padding: 2%;
+    display: flex;             
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;
+    text-align: center;
+    gap: 1rem; 
     height: 100%;
 }
+
+
+.formulario-registro {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.formulario-registro h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
+
+.formulario-registro .form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.formulario-registro .form-col {
+  flex: 1;
+}
+
+.formulario-registro input[type="text"],
+.formulario-registro input[type="password"],
+.formulario-registro input[type="email"],
+.formulario-registro input[type="date"],
+.formulario-registro input[type="username"] {
+  width: 100%;
+  padding: 12px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.formulario-registro input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.formulario-registro input:focus {
+  border-color: #0984e3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(9, 132, 227, 0.5);
+}
+
+.formulario-registro button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #0984e3;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario-registro button:hover {
+  background: #0652DD;
+}
+
+.formulario-registro .recordar,
+.formulario-registro .registro {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.formulario-registro .recordar a,
+.formulario-registro .registro a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.formulario-registro .recordar a:hover,
+.formulario-registro .registro a:hover {
+  color: #0984e3;
+  text-decoration: underline;
+}
+
+
+/* ----------Login---------- */
+
+.main-login{
+    background-image: url(opcion3.png);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
+    padding: 2%;
+    display: flex;             
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;
+    text-align: center;
+    gap: 1rem; 
+    height: 100%;
+}
+
+.formulario-login {
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.formulario-login h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
+
+.formulario-login input[type="text"],
+.formulario-login input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.formulario-login input:focus {
+  border-color: #0984e3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(9, 132, 227, 0.5);
+}
+
+.formulario-login button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #0984e3;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario-login button:hover {
+  background: #0652DD;
+}
+
+.formulario-login .recordar,
+.formulario-login .registro {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.formulario-login .recordar a,
+.formulario-login .registro a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.formulario-login .recordar a:hover,
+.formulario-login .registro a:hover {
+  color: #0984e3;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

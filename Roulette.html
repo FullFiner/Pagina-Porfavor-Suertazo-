@@ -7,16 +7,87 @@
 
     <body>
         <header class="common-header">
-            <h1>Suertazo!</h1>
+            <h1>Ruleta Europea 🎲</h1>
+            <nav>
+            
+            <a class="btn-redireccion" href="DevelopersInformation.html">Informacion importante</a>
+            <a class="btn-redireccion" href="reglasruleta.html">Reglas de la Ruleta</a>
+            <a class="btn-redireccion" href="transaccionessuertazo.html">Transacciones</a>
+            <a class="btn-redireccion" href="UserProfile.html">Ir al perfil</a>
+            </nav>
         </header>
         <main id="main-roulette">
-            <section class="roulette"></section>
 
-            
-            <section class="gamestatus"></section>
-            <section class="saldo dispo"></section>
-            <section></section>
-        </main>
+    <section class="gamestatus-sec">
+        <h2>Estado del juego</h2>
+        <p id="estado-juego">Recibiendo apuestas...</p>
+    </section>
+
+    <section class="roulette-sec">
+        <img src="StaticRoulette.png" alt="Ruleta" class="roulette-img">
+        <img src="Tablebet.png" alt="Tabla de apuestas" class="tablebet-img">
+    </section>
+
+    <section class="saldo dispo-sec">
+        <h2>Saldo disponible</h2>
+        <p id="saldo">$1000</p>
+    </section>
+
+    <section class="resultados-sec">
+        <div class="ultimos-numeros">
+            <h2>Últimos 5 números ganadores</h2>
+            <ul>
+                <li>23 - Rojo</li>
+                <li>7 - Negro</li>
+                <li>0 - Verde</li>
+                <li>14 - Rojo</li>
+                <li>32 - Negro</li>
+            </ul>
+        </div>
+
+        <section class="ultimas-apuestas">
+            <h2>Últimas 5 apuestas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Apuesta</th>
+                        <th>Monto</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rojo</td>
+                        <td>$200</td>
+                        <td>Ganada</td>
+                    </tr>
+                    <tr>
+                        <td>Negro</td>
+                        <td>$150</td>
+                        <td>Perdida</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>$100</td>
+                        <td>Ganada</td>
+                    </tr>
+                    <tr>
+                        <td>Par</td>
+                        <td>$250</td>
+                        <td>Perdida</td>
+                    </tr>
+                    <tr>
+                        <td>Impar</td>
+                        <td>$300</td>
+                        <td>Ganada</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+</main>
+
         <footer class="common-footer">
             <p class="titulos">© Sitio ficticio de apuestas 2025</p>
         </footer>
