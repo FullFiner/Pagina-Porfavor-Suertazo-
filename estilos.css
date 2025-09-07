@@ -33,6 +33,7 @@
 
 html,body{
     height: 100%;
+    
     margin:0;
     display: flex;
     flex-direction: column;
@@ -116,7 +117,7 @@ h2 {
 
 /*-------------------------developersinfor----------------------------------------*/
 #main-devinformation{
-    background-image: url("Diseño\ sin\ título\ \(1\).png");
+    background-image: url("fondoreglas.png");
     background-size: cover;       
     background-repeat: no-repeat; 
     background-position: center center;
@@ -131,7 +132,7 @@ h2 {
     
 }
 .card-info{
-    background-color: #2A335A;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,6 +141,8 @@ h2 {
     padding: 1.5rem;
     border-radius: 12px;
     width: 100%;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+    background: linear-gradient(145deg, #1C2248, #2A335A);
 
     
 }
@@ -157,13 +160,13 @@ h2 {
     color:white;
 }
 
-.linea-decorativa{
+/*.linea-decorativa{
     width: 100%;
     height: 1mm;
     margin-top: 1mm;
     background-color: #FFD700;
 
-}
+}*/
 /*-------------------------------------------------------userpro-------------------------------------------------*/
 
 #main-userprofile {
@@ -490,7 +493,7 @@ h2 {
 }
 
 
-/* ----------Login---------- */
+/* -----------------------------------Login------------------------------------- */
 
 .main-login{
     background-image: url(opcion3.png);
@@ -575,11 +578,355 @@ h2 {
   text-decoration: underline;
 }
 
+/*--------------------------------Reglas de la ruleta------------------------------*/
+
+.main-rules{
+    background-image: url(fondoreglas.png);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+    
+    display: flex;
+    
+
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+
+}
+
+.card-rules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    color:white;
+    
+    border-radius: 1rem;
+    padding: 5mm;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+    background: linear-gradient(145deg, #1C2248, #2A335A);
+    
+}
+
+.rulesec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 4%;
+    
+}
+
+.rulesec1 p{
+    font-size: large;
+}
+
+.rulesec2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    gap: 4%;
+}
+
+.rulesec3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 4%;
+}
+
+.rulesec4{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.linea-decorativa {
+  width: 100%;
+  height: 3px;
+  margin: 1rem auto;
+  background: linear-gradient(to right, transparent, #FFD700, transparent);
+  border-radius: 2px;
+}
+
+.tabla-reglas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.tabla-reglas thead {
+  background: linear-gradient(90deg, #1C2248, #2A335A);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tabla-reglas th {
+  padding: 1rem;
+}
+
+
+.tabla-reglas td {
+  padding: 0.8rem;
+  color: #fff;
+}
+
+
+.tabla-reglas tbody tr:nth-child(even) {
+  background-color: #2A335A;
+}
+
+.tabla-reglas tbody tr:nth-child(odd) {
+  background-color: #222A4A;
+}
+
+
+.tabla-reglas tbody tr:hover {
+  background-color: #394761;
+  transform: scale(1.01);
+  transition: 0.2s ease-in-out;
+}
+
+
+.tabla-reglas td:nth-child(3) {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.card-rules img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+
+
+#consejos article {
+  background: rgba(42, 51, 90, 0.7);
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#consejos article:hover {
+  background: rgba(57, 71, 97, 0.9);
+  transform: translateX(5px);
+}
+
+#ayuda ul {
+  list-style: none;
+  padding: 0;
+}
+
+#ayuda li {
+  margin: 0.4rem 0;
+  padding: 0.5rem;
+  background: rgba(28, 34, 72, 0.7);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+#ayuda strong {
+  color: #FFD700;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------Transacciones---------------------------------*/
+
+
+.transacciones-body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:url(pagos.png); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+
+.transacciones-titulo {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(255,215,0,0.7);
+}
+
+.main-transacciones{
+    align-items: center;
+    text-align: center;
+}
+
+
+.transacciones-formularios {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.transacciones-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.transacciones-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+.transacciones-subtitulo {
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+
+.transacciones-input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+
+.transacciones-btn {
+  background: #FFD700;
+  color: #1c2248;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.transacciones-btn:hover {
+  background: #e6c200;
+}
+
+
+.transacciones-saldo {
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.transacciones-saldo span {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+
+.btn-transacciones{
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/*--------------------------------Cerrar Sesion--------------------------------------*/
+.main-logout{
+
+    background-image: url(dadostristongos.png);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+
+
+}
+
+.card-logout{
+    background-color: rgba(255,255,255,0.5);
+    padding:1rem;
+    border-radius:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+.card-logout h2{
+    color:white;
+}
+
+.option-logout{
+    margin-top: 1mm;
+    display: flex;
+
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+}
 
 
 
