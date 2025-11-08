@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,32 +6,93 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body class="transacciones-body">
+
+  <header>
+    <h1 class="transacciones-titulo">💰 Suertazo!</h1>
+  </header>
+
   <main class="main-transacciones">
-  <h1 class="transacciones-titulo">💰 Suertazo!</h1>
+    <section class="transacciones-formularios">
+      <!-- Formulario de Depósito -->
+      <form id="form-deposito" class="transacciones-card" action="#" method="post">
+        <h2 class="transacciones-subtitulo">Depositar</h2>
+        <input class="transacciones-input" type="number" name="deposito" placeholder="Ingrese monto" min="0" required>
+        <button class="transacciones-btn" type="submit">Depositar</button>
+      </form>
+      <form id="form-retiro" class="transacciones-card" action="#" method="post">
+        <h2 class="transacciones-subtitulo">Retirar</h2>
+        <input class="transacciones-input" type="number" name="retiro" placeholder="Ingrese monto" min="0" required>
+        <button class="transacciones-btn" type="submit">Retirar</button>
+      </form>
+    </section>
+    <section class="transacciones-saldo">
+      <p>Saldo actual: $<span id="saldo-valor">10000</span></p>
+      <p id="mensaje" class="transacciones-mensaje"></p>
+    </section>
+    <section class="btn-transacciones">
+      <a class="btn-redireccion" href="UserProfile.html">Volver al Perfil</a>
+      <a class="btn-redireccion" href="Roulette.html">Ir a la ruleta</a>
+    </section>
+  </main>
 
-  <section class="transacciones-formularios">
-    <form class="transacciones-card" action="#" method="post" onsubmit="return false;">
-      <h3 class="transacciones-subtitulo">Depositar</h3>
-      <input class="transacciones-input" type="number" name="deposito" placeholder="Ingrese monto" min="0">
-      <button class="transacciones-btn" type="submit">Depositar</button>
-    </form>
+  <footer>
+    <p>&copy; 2025 Suertazo.cl — Todos los derechos reservados.</p>
+  </footer>
 
-    <form class="transacciones-card" action="#" method="post" onsubmit="return false;">
-      <h3 class="transacciones-subtitulo">Retirar</h3>
-      <input class="transacciones-input" type="number" name="retiro" placeholder="Ingrese monto" min="0">
-      <button class="transacciones-btn" type="submit">Retirar</button>
-    </form>
-  </section>
+  <script>
+<script>
+  let saldo = parseInt(document.getElementById('saldo-valor').innerText) || 0;
 
-  <div id="saldo" class="transacciones-saldo">
-    Saldo actual: <span>$10.000</span>
-  </div>
+  function actualizarSaldo() {
+    document.getElementById('saldo-valor').innerText = saldo;
+  }
 
-  <section class="btn-transacciones">
-  <a class="btn-redireccion" href="UserProfile.html">Volver al Perfil</a>
-  <a class="btn-redireccion" href="Roulette.html">Ir a la ruleta</a>
-</section>
+  function mostrarMensaje(texto, esError = false) {
+    const mensaje = document.getElementById('mensaje');
+    mensaje.textContent = texto;
+    mensaje.style.color = esError ? 'red' : 'green';
+  }
+  const formDeposito = document.getElementById('form-deposito');
+  formDeposito.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-</main>
+    const input = formDeposito.querySelector('input[name="deposito"]');
+    const monto = Number(input.value);
+
+    if (monto <= 0) {
+      mostrarMensaje('Ingresa un monto válido para depósito.', true);
+      return;
+    }
+
+    saldo += monto;
+    actualizarSaldo();
+    input.value = '';
+    mostrarMensaje('Depósito realizado con éxito.');
+  });
+  const formRetiro = document.getElementById('form-retiro');
+  formRetiro.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const input = formRetiro.querySelector('input[name="retiro"]');
+    const monto = Number(input.value);
+
+    if (monto <= 0) {
+      mostrarMensaje('Ingresa un monto válido para retiro.', true);
+      return;
+    }
+
+    if (monto > saldo) {
+      mostrarMensaje('Fondos insuficientes.', true);
+      return;
+    }
+
+    saldo -= monto;
+    actualizarSaldo();
+    input.value = '';
+    mostrarMensaje('Retiro realizado con éxito.');
+  });
+</script>
+
+
 </body>
 </html>
